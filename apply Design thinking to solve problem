@@ -1,0 +1,76 @@
+Apply design thinking to solve the problem:Link ggdrive for more detail https://docs.google.com/spreadsheets/d/1f4v-nPJ3reEo6NstKXwvsO6iJNLyi0IHopUXXvXHamY/edit#gid=0
+Step 1 - Empathize 
+1.1 Stakeholder Challenge: What are stakeholder want to solve ? What are their problems?
+ Overview the sale's infomation
+- Expand market share
+- Decide strategic 
+
+1.2 Dashboard Goal:
+- Overview the sale's infomation by country -> idea about market to expand
+- Sale situation in each market and decide which market should be expanded
+- Sale KPIs relate to products to decide which is strategic products
+
+1.3 Stakeholder:
+Senior Manager => Using Strategic Dash Board
+
+1.4 Empathize dataset:
+- Orders: 
+Dimension: Order Date, Ship Date, Ship Mode, Customer ID, Segment, City, Country, State, Market, Product ID, Category, Sub-Category, Product Name, Order Priority.
+Measure: Sales, Quantity, Discount, Profit, Shipping Cost.
+- People: 
+Dimenson: Salename, Region
+- Return:
+Dimension: Market, order_id
+
+1.5 Clean dataset:
+- Null: Only have in Postalcode, it is not important to solve the problem.
+- Outliners Profit: have numorous products which have negative profit, it can be sold for liquidation. Need to be reconfirmed.
+- Don't have duplicate data
+- Change all data in right type
+
+Step 2: Define point of view 
+2.1 Top Down: Using logic tree to solve the problem
+
+- Overview sale information: Total Sale, Profit, Quantity, Order, Return Rate
+
+- Marketshare expand (increase sale in market): 
+  + Analyze current sales data and growth trends for different regions.
+  + Evaluate demographics, purchasing power, and cultural preferences in each region.
+  + Identify regions with the highest growth potential and demand for retail products.
+
+- Strategic Product to increase sale quantity:
+  Dynamic Pricing: 
+    + Utilize dynamic pricing algorithms to optimize base on demand, competition and customer behavior; 
+    + Offer personalized discounts and promotions to loyal customer to enhance retention.
+  Seasonal Promotion: 
+    + Design seasonal promotions to capitalize on peak buying period; 
+    + Utilize social media and email marketing to create awareness and drive traffic during promotional events.
+  Product Assortment and Mechandise:
+    + Optimize product mix: Using historical data to identify top-selling products and focus promote on them; 
+    + Identify underperformance product and consider repositioning or discontinuing them
+    + Improve Merchandise and Product display: Using historical data to understand customer behavior and preference, place high margin strategically
+
+2.2 Bottom Up: Select Key Dimension and Sub Dimension
+
+- Overview sale information: Total Sale, Profit, Quantity, Order, Return Rate, Sale, Profit by Month, Return rate by month
+- Marketshare expand: 
+    + Key dimension: Country, Segment, Market
+    + Sub dimension: Shipping Type, Time Series
+    + Key metric: Total Sale, Quant Sale, Return number, count distint customer ID, shipping cost, avg DateDiff (Ship date và Order Date), avg bucket amount, profit margin each customer by market, Customer increase rate, 
+- Strategic Product:  
+    + Key dimension: cat, sub_cat, Product Name, Product_id
+    + Sub dimension: Market, Time series
+    + Key metric: total sale by cat and sub_cat, top sale amount, high quant sales, low quant sale, Profit margin by cat and sub_cat, high margin product, low margin product.
+
+Step 3 - Ideate
+List down metric by layer and defind key metric 
+- Marketshare expand: NorthStar Metric: Sale Amount by Market
+ Strategic Product NorthStar Metric: Quantity Amount and Profit Margin Products 
+
+Step 4 - Prototype
+Create complete dashboard
+
+Step 5 - Review
+Always remember that next dashboard can better 10 times than the first one
+
+
